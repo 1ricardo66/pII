@@ -34,6 +34,11 @@ valor DECIMAL(10,2));
         this.valor = valor;
         this.cor = cor;
     }
+
+    public Carro() {
+    }
+
+  
     public String getNome() {
         return nome;
     }

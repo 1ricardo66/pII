@@ -17,9 +17,9 @@ import java.sql.SQLException;
 public class Conexao {
     public static String DRIVER = "com.mysql.jdbc.Driver";
     //COM DOCKER 192.168.99.100 SEM DOCKER 127.0.0.1
-    public static String URL = "jdbc:mysql://192.168.99.100:3306/ueg";
+    public static String URL = "jdbc:mysql://localhost:3306/vendas";
     public static String USER ="root";
-    public static String PASS = "1234";
+    public static String PASS = "";
     
     public static Connection getConnection(){
         try{            

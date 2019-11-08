@@ -97,6 +97,10 @@ public class PessoaDAO {
 
        }
 
+   @Override
+   public String toString(){
+       return "oi";
+   }
    
      
 }

@@ -21,6 +21,7 @@ public class CarroDAO {
     private String INSERT = "INSERT INTO carro "
             + "(nome,cor,ano,potencia,valor) "
             + "VALUES (?,?,?,?,?)";
+        private static String RESET = "TRUNCATE TABLE carro";
     private String DELETE = "DELETE FROM carro "
             + "WHERE id = ?";
     private String READ = "SELECT * FROM carro";
@@ -68,6 +69,14 @@ public class CarroDAO {
             return null;
         }
     }
+    
+       public void resetTable(){
+        try {
+            PreparedStatement stmt = this.conn.prepareStatement(RESET);
+            stmt.execute();
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());        }
+   }
     
     
 }

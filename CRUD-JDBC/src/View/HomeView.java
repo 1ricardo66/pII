@@ -68,7 +68,7 @@ public class HomeView extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jButton1))
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(28, 28, 28)
                 .addComponent(jButton2)
                 .addGap(18, 18, 18)
                 .addComponent(jButton3)
